@@ -3,13 +3,16 @@ body, div, p, span, img, i, h3 {
 	margin: 0;
 	padding: 0;
 }
+html {
+	font-size: 14px;
+}
 body, html {
 	width: 100%;
 	height: 100%;
 	background-color: #037AA7;
-	font-size: 14px;
+	/*font-size: 14px;*/
 	color: #fff;
-	font-family: 'microsoft yahei';
+	font-family: 'Helvetica';
 }
 .swiper-container {
 	max-width: 414px;
@@ -20,10 +23,11 @@ body, html {
 }
 /* 引导箭头 */
 .arrow {
-	position: absolute;
+	position: fixed;
 	overflow: hidden;
 	width: 50px;
 	height: 25px;
+	bottom: 0;
 	left: 50%;
 	margin-left: -25px;
 	z-index: 10;
@@ -34,8 +38,8 @@ body, html {
 	position: absolute;
 	font: 400 50px/50px 'microsoft yahei';
 	left: 0;
-	top: 0px;
-	text-shadow: 0px 0px 9px #000;
+	top: 0;
+	text-shadow: 0 0 9px #000;
 }
 h3[class^=title] {
 	font-weight: 400;
@@ -52,29 +56,32 @@ h3[class^=title] {
 	background-size: cover;
 }
 .bg1 > .pic {
-	width: 25%;
-	height: 14%;
+	width: 7rem;
+	height: 7rem;
 	border-radius: 50%;
 	position: relative;
 	margin-top: 18%;
 	margin-left: 60%;
+	background: url('../imgs/me.png') no-repeat center 0.8rem;
+	background-size: contain;
 	background-color: rgba(255, 255, 255, 0.8);
 }
-.bg1 > .pic::after, .bg1 > .pic::before {
+.bg1 > .pic::after, 
+.bg1 > .pic::before {
 	content: '';
-	width: 99%;
-	height: 99%;
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	border: 0.65rem solid rgba(255, 255, 255, 0.7);
+	border: 0.7rem solid rgba(255, 255, 255, 0.7);
 	border-radius: 50%;
-	top: -10%;
-	left: -10%;
+	top: -9%;
+	left: -9%;
 	animation: breathe 2.5s linear infinite;
 	-webkit-animation: breathe 2.5s linear infinite;
 }
 .bg1 > .pic::after {
 	border-color: rgba(255, 255, 255, 0.5);
-	transform: scale(1.2);
+	transform: scale(1.19);
 	animation: breathe 2.5s linear infinite 1.25s;
 	-webkit-animation: breathe 2.5s linear infinite 1.25s;
 }
@@ -117,9 +124,10 @@ h3[class^=title] {
 	position: absolute;
 	top: 9%;
 	left: 0;
-	width: 21.8%;
-	height: 12.3%;
+	width: 5rem;
+	height: 5rem;
 	background: url('../imgs/wheel.png') no-repeat center;
+	background-size: contain;
 	transform: translateX(500px);
 	-webkit-transform: translateX(500px);
 }
@@ -145,7 +153,7 @@ h3[class^=title] {
 }
 .bg2 > .skill > span {
 	display: inline-block;
-	font-size: 0.5rem;
+	font-size: 0.8rem;
 	padding: 3% 4.3%;
 	margin: 3% 0 0 5%;
 	background-color: rgba(0, 0, 0, 0.3);
@@ -178,10 +186,11 @@ h3[class^=title] {
 	width: 48.4%;
 	height: 27.2%;
 	position: absolute;
-	bottom: 19.5%;
+	bottom: 11.9%;
 	right: 8%;
-	background: url('../imgs/global.png') no-repeat;
-	background-size: cover;
+	background: url('../imgs/global.png') no-repeat center;
+	/*background-size: cover;*/
+	background-size: contain;
 	animation: global 5s infinite linear;
 	-webkit-animation: global 5s infinite linear;
 }
@@ -430,6 +439,7 @@ h3[class^=title] {
 	height: 3rem;
 	position: relative;
 	padding: 54px;
+	font-size: 1.2rem;
 }
 .bg5 > .message > a {
 	display: block;
