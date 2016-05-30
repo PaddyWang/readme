@@ -476,6 +476,23 @@ h3[class^=title] {
 	transform: translateY(300px);
 	-webkit-transform: translateY(300px);
 }
+.bg5 > .message > .iconfont {
+	position: absolute;
+	top: 3.8rem;
+	right: 6px;
+	font-size: 2.2rem;
+	color: lavender;
+	background-color: transparent;
+	text-shadow: 0 0 9px #fff;
+	padding: 0;
+}
+.bg5 > .message > .iconfont::before {
+	border: none;
+}
+.bg5 .github > .iconfont,
+.bg5 .email > .iconfont {
+	left: 6px;
+}
 .bg5 > .blog i,
 .bg5 > .gitbook i {
 	float: right;
