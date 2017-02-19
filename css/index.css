@@ -46,7 +46,8 @@ body, html {
 	font-size: 30px;
 	font-style: normal;
 	text-align: center;
-    line-height: 32px;
+    line-height: 36px;
+    font-weight: bolder;
     /*text-indent: -2px;*/
 	left: 0;
 	top: 0;
